@@ -5,4 +5,7 @@ Depois de ler sobre ele por tantas pessoas diferentes, estou dando uma chance pr
 Para modificar as configurações entre no Vim e digite:
 :edit $MYVIMRC
 
+h2. Documentação
+Mais informações na documentação do Vim em http://vimdoc.sourceforge.net/htmldoc/usr_toc.html
+
 h1. Bundled Plugins
