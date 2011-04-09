@@ -1,0 +1,5 @@
+h1. Vim
+
+Depois de ler sobre ele por tantas pessoas diferentes, estou dando uma chance pra mim, para experimentar esse curioso editor.
+
+h1. Bundled Plugins
