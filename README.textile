@@ -9,3 +9,5 @@ h2. Documentação
 Mais informações na documentação do Vim em http://vimdoc.sourceforge.net/htmldoc/usr_toc.html
 
 h1. Bundled Plugins
+
+ * "Pathogen" :https://github.com/tpope/vim-pathogen - "Como instalar os plugins no VIM encapsulados em um diretório." :http://gustavodutra.com/post/409/pathogenvim-uma-alternativa-para-quem-utiliza-plugins-em-repositorios-remotos, ou "Como gerenciar os arquivos de configuração do VIM" :http://addisu.taddese.com/blog/using-github-and-pathogen-for-your-vim-config-files. 
