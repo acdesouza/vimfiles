@@ -1,8 +1,12 @@
+set nocompatible
+
+set autoindent
+set tabstop=4
+set shiftwidth=4
+
 set number
 
 set incsearch
-
-set tabstop=4
 
 set guifont=Menlo:h13
 
