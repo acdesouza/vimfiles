@@ -7,6 +7,7 @@ Para modificar as configurações entre no Vim e digite:
 <pre>
 :edit $MYVIMRC
 </pre>
+
 h2. Documentação
 
  * "Vim":http://vimdoc.sourceforge.net/htmldoc/usr_toc.html - sobre o editor Vim.
@@ -22,7 +23,8 @@ As customizações feitas no meu .vimrc foram encontradas em http://jmcpherson.o
  * Exibir o número da linha da lateral esquerda do texto;
  * Exibir a linha e coluna atual, na inferior;
  * Identação automática, isto é, a indentação da linha próxima linha é a mesma da linha atual;
- * Tabulação de 4 caracteres;
+ * Tabulação de 2 caracteres;
+ * Substituir os caracteres de tabulação pelo de espaço;
  * Exibir chaves correspondentes, isto é, quando fechar uma chave, mostrar qual a chave que está sendo fechada;
  * Buscar enquanto digita, isto é, ao ir para o modo de comando e digitar /, tudo que for digitado depois será destacado na próxima parte do texto onde aparecer, como na busca do Firefox;
  * Fonte Menlo de tamanho 13;
