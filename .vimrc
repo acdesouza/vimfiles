@@ -1,10 +1,13 @@
 set nocompatible
 
+set guioptions-=T
+set number
+set ruler
+
 set autoindent
 set tabstop=4
 set shiftwidth=4
-
-set number
+set showmatch
 
 set incsearch
 
