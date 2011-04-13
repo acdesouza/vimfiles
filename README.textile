@@ -4,13 +4,14 @@ Venho lendo que não dá para depender de IDEs há algum tempo. São as mesmas p
 Então, aproveitando minha atual entrada no mundo Ruby e o fato do Akita, que é quem eu leio sobre Ruby e usa VIM, resolvi me inspirar na idéia de "versionar meu diretório ~/.vim usando o Git":http://addisu.taddese.com/blog/using-github-and-pathogen-for-your-vim-config-files.
 
 Para modificar as configurações entre no Vim e digite:
-
+<pre>
 :edit $MYVIMRC
-
+</pre>
 h2. Documentação
 
  * "Vim":http://vimdoc.sourceforge.net/htmldoc/usr_toc.html - sobre o editor Vim.
  * "Akita vimfiles, no Github":https://github.com/akitaonrails/vimfiles - O repositório do Akita com a configuração do vim dele.
+ * "Atalhos Úteis":http://www.worldtimzone.com/res/vi.html.
 
 h1. Modificações do VIM
 
@@ -30,5 +31,5 @@ As customizações feitas no meu .vimrc foram encontradas em http://jmcpherson.o
 h1. Bundled Plugins
 
  * "Pathogen":https://github.com/tpope/vim-pathogen - "Como instalar os plugins no VIM encapsulados em uma pasta.":http://gustavodutra.com/post/409/pathogenvim-uma-alternativa-para-quem-utiliza-plugins-em-repositorios-remotos.
- * "Command-T":http://git.wincent.com/command-t.git/blob_plain/HEAD:/README.txt - Plugin que emula a abertura de arquivos do TextMate usando Command-T. No caso do VIM o atalho é [Leader]t, onde [Leader] costuma ser o \. 
+ * "Command-T":http://git.wincent.com/command-t.git/blob_plain/HEAD:/README.txt - Plugin que emula a abertura de arquivos do TextMate usando Command-T. No caso do VIM o atalho é [Leader]t, onde [Leader] costuma ser o \. Este plugin busca pelos arquivos no diretório corrente no Vim. Para mudar de diretório, use o cd no modo de comando. 
  * "endwise":http://www.vim.org/scripts/script.php?script_id=2386 - Plugin para adição de fechamento de blocos em Ruby, como if, def e do com o end. Mais sobre "indentação de código no VIM":http://vim.wikia.com/wiki/VimTip83.
