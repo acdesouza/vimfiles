@@ -22,5 +22,7 @@ set guifont=Menlo:h13
 "Pathogen config
 call pathogen#runtime_append_all_bundles()
 
-"NERDTree Toggle
+"NERDTree Toggle using \][ keymap
 noremap <Leader>][ :NERDTreeToggle<CR>
+let g:NERDTreeChDirMode=2 "Sincronizar o CommandT com o NERDTree
+
