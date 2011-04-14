@@ -22,6 +22,8 @@ As customizações feitas no meu .vimrc foram encontradas em http://jmcpherson.o
  * Sem barra de ferramentas;
  * Exibir o número da linha da lateral esquerda do texto;
  * Exibir a linha e coluna atual, na inferior;
+ * Usar codificação UTF-8;
+ * Adicionar o shebang UTF-8 na primeira linha do arquivo com o keymap Command + 1
  * Identação automática, isto é, a indentação da linha próxima linha é a mesma da linha atual;
  * Tabulação de 2 caracteres;
  * Substituir os caracteres de tabulação pelo de espaço;
