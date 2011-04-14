@@ -15,7 +15,7 @@ set showmatch "Show braces matchs
 
 set cursorline "highlight current line
 
-set incsearch
+set incsearch "Select search match while typing
 
 set guifont=Menlo:h13
 
