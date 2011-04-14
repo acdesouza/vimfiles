@@ -5,6 +5,7 @@ set number "Show line number
 set ruler
 
 set encoding=utf-8
+noremap <D-1> :0put = '#-*- coding: utf-8 -*-'<CR>
 
 set autoindent
 set tabstop=2
