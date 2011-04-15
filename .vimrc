@@ -1,17 +1,24 @@
 set nocompatible
 
-set guioptions-=T
+set guioptions-=T "Hide toolbar
 set number "Show line number
-set ruler
+set ruler "Show line and column number
 
-set encoding=utf-8
-
+set encoding=utf-8    " Define file to utf-8
 "Add utf-8 shebang line
-noremap <D-1> :0put = '#-*- coding: utf-8 -*-'<CR> 
-set autoindent
-set tabstop=2
-set shiftwidth=2
+noremap <D-1> :0put = '#-*- coding: utf-8 -*-'<CR>
+
+syntax on             " Enable syntax highlighting
+filetype on           " Enable filetype detection
+filetype indent on    " Enable filetype-specific indenting
+filetype plugin on    " Enable filetype-specific plugins
+
 set expandtab "Convert tabs char to spaces.
+set tabstop=2 shiftwidth=2 softtabstop=2
+set autoindent
+
+"Remove trailing spaces
+autocmd BufWritePre * :%s/\s\+$//e
 
 set showmatch "Show braces matchs
 
@@ -27,4 +34,3 @@ call pathogen#runtime_append_all_bundles()
 "NERDTree Toggle using \][ keymap
 noremap <Leader>][ :NERDTreeToggle<CR>
 let g:NERDTreeChDirMode=2 "Sincronizar o CommandT com o NERDTree
-
