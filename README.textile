@@ -31,6 +31,17 @@ Feito isso, entre no VIM e execute:
 :call pathogen#helptags()
 </pre>
 
+h2. Dependências
+
+h3. Linux - Ubuntu e Debian
+No Ubuntu, é necessário instalar o Ruby. O pacote ruby-dev é necessário para o plugin Command-T.
+<pre>
+sudo apt-get install ruby ruby-dev
+</pre>
+
+h3. MacOSX
+Precisa do XCode.
+
 h1. Modificações do VIM
 
 As customizações feitas no meu .vimrc foram encontradas em http://jmcpherson.org/vimrc.html. Não estou usando todas, apenas as que me permitem definir o seguinte comportamento:
