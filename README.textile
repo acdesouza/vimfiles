@@ -14,6 +14,23 @@ h2. Documentação
  * "Akita vimfiles, no Github":https://github.com/akitaonrails/vimfiles - O repositório do Akita com a configuração do vim dele.
  * "Atalhos Úteis":http://www.worldtimzone.com/res/vi.html.
 
+h2. Instalação
+
+Além de baixar o projeto para o diretório .vim, é necessário baixar os submodulos. E, ainda, tem um passo adicional para o plugin command-t
+<pre>
+git clone https://acdesouza@github.com/acdesouza/vimfiles.git .vim
+git submodule update --init
+echo "source .vim/.vimrc" > .vimrc
+cd .vim/bundle/command-t/ruby/command-t/
+ruby extconf.rb
+make
+<pre>
+
+Feito isso, entre no VIM e execute:
+<pre>
+:call pathogen#helptags()
+</pre>
+
 h1. Modificações do VIM
 
 As customizações feitas no meu .vimrc foram encontradas em http://jmcpherson.org/vimrc.html. Não estou usando todas, apenas as que me permitem definir o seguinte comportamento:
