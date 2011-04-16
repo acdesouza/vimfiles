@@ -20,11 +20,11 @@ Além de baixar o projeto para o diretório .vim, é necessário baixar os submo
 <pre>
 git clone https://acdesouza@github.com/acdesouza/vimfiles.git .vim
 git submodule update --init
-echo "source .vim/.vimrc" > .vimrc
-cd .vim/bundle/command-t/ruby/command-t/
+echo "source ~/.vim/.vimrc" > .vimrc
+cd ~/.vim/bundle/command-t/ruby/command-t/
 ruby extconf.rb
 make
-<pre>
+</pre>
 
 Feito isso, entre no VIM e execute:
 <pre>
