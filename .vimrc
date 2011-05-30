@@ -13,6 +13,7 @@ filetype on           " Enable filetype detection
 filetype indent on    " Enable filetype-specific indenting
 filetype plugin on    " Enable filetype-specific plugins
 
+set nowrap
 set expandtab "Convert tabs char to spaces.
 set tabstop=2 shiftwidth=2 softtabstop=2
 set autoindent
