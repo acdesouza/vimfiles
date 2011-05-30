@@ -29,6 +29,10 @@ set incsearch "Select search match while typing
 
 set guifont=Menlo:h13
 
+" Directories for swp files
+set backupdir=~/.vim/backup
+set directory=~/.vim/backup
+
 "Pathogen config
 call pathogen#runtime_append_all_bundles()
 
