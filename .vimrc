@@ -35,3 +35,7 @@ call pathogen#runtime_append_all_bundles()
 "NERDTree Toggle using \][ keymap
 noremap <Leader>][ :NERDTreeToggle<CR>
 let g:NERDTreeChDirMode=2 "Sincronizar o CommandT com o NERDTree
+
+" Thorfile, Rakefile, Vagrantfile and Gemfile are Ruby
+au BufRead,BufNewFile {Gemfile,Rakefile,Vagrantfile,Thorfile,config.ru}    set ft=ruby
+
