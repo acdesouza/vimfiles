@@ -45,6 +45,8 @@ let g:NERDTreeChDirMode=2 "Sincronizar o CommandT com o NERDTree
 map <D-/> <plug>NERDCommenterToggle
 imap <D-/> <Esc><plug>NERDCommenterToggle
 
+let g:CommandTMaxHeight=20 "Show only 20 files, on Command-T
+
 
 " Thorfile, Rakefile, Vagrantfile and Gemfile are Ruby
 au BufRead,BufNewFile {Gemfile,Rakefile,Vagrantfile,Thorfile,config.ru}    set ft=ruby
