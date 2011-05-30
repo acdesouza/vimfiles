@@ -1,6 +1,7 @@
 set nocompatible
 
 set guioptions-=T "Hide toolbar
+
 set number "Show line number
 set ruler "Show line and column number
 
@@ -27,7 +28,7 @@ set cursorline "highlight current line
 
 set incsearch "Select search match while typing
 
-set guifont=Menlo:h13
+set guifont=Courier:h14
 
 " Directories for swp files
 set backupdir=~/.vim/backup
