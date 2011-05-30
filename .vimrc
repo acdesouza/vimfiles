@@ -41,6 +41,11 @@ call pathogen#runtime_append_all_bundles()
 noremap <Leader>][ :NERDTreeToggle<CR>
 let g:NERDTreeChDirMode=2 "Sincronizar o CommandT com o NERDTree
 
+" NERD Commenter: Command-/ to toggle comments
+map <D-/> <plug>NERDCommenterToggle
+imap <D-/> <Esc><plug>NERDCommenterToggle
+
+
 " Thorfile, Rakefile, Vagrantfile and Gemfile are Ruby
 au BufRead,BufNewFile {Gemfile,Rakefile,Vagrantfile,Thorfile,config.ru}    set ft=ruby
 

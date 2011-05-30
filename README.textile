@@ -53,6 +53,7 @@ As customizações feitas no meu .vimrc foram encontradas em http://jmcpherson.o
  * Exibir a linha e coluna atual, na inferior;
  * Usar codificação UTF-8;
  * Adicionar o shebang UTF-8 na primeira linha do arquivo com o keymap Command + 1
+ * (Des)Comentar a linha atual, ou as linhas selecionadas, com o keymap Command + /
  * Identação automática, isto é, a indentação da linha próxima linha é a mesma da linha atual;
  * Indentação inteligente, isto é, quando for criado um bloco de código, a próxima linha terá sua indentação incrementada;
  * Tabulação de 2 caracteres;
@@ -76,3 +77,5 @@ h1. Bundled Plugins
  *** "F2":http://www.catonmat.net/blog/vim-plugins-nerdtree-vim
  *** "\d":http://sites.google.com/site/chrelad/notes-1/keymappingtotogglenerdtree
  * "vim-ruby":https://github.com/vim-ruby/vim-ruby - Plugin para syntax highlight, indentação inteligente para Ruby
+ * "NERD_Commenter":http://www.vim.org/scripts/script.php?script_id=1218
+ ** Estou usando "Command/" para alternar entre comentar/descomentar a linha atual.
