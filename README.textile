@@ -4,9 +4,9 @@ Venho lendo que não dá para depender de IDEs há algum tempo. São as mesmas p
 Então, aproveitando minha atual entrada no mundo Ruby e o fato do Akita, que é quem eu leio sobre Ruby e usa VIM, resolvi me inspirar na idéia de "versionar meu diretório ~/.vim usando o Git":http://addisu.taddese.com/blog/using-github-and-pathogen-for-your-vim-config-files.
 
 Para modificar as configurações entre no Vim e digite:
-<pre>
+<pre><code>
 :edit $MYVIMRC
-</pre>
+</code></pre>
 
 h2. Documentação
 
@@ -25,26 +25,32 @@ Além de baixar o projeto para o diretório .vim, é necessário baixar os submo
 git clone https://github.com/acdesouza/vimfiles.git .vim
 git submodule update --init
 echo "source ~/.vim/.vimrc" > ~/.vimrc
+</code></pre>
+
+Então, entre na pasta do Command-T e execute o make:
+<pre><code>
 cd ~/.vim/bundle/command-t/ruby/command-t/
 ruby extconf.rb
 make
 </code></pre>
 
 Feito isso, entre no VIM e execute:
-<pre>
+<pre><code>
 :call pathogen#helptags()
-</pre>
+</code></pre>
 
 h2. Dependências
 
 h3. Linux - Ubuntu e Debian
+
 No Ubuntu, é necessário instalar o Ruby. O pacote ruby-dev é necessário para o plugin Command-T.
-<pre>
+<pre><code>
 sudo apt-get install ruby ruby-dev
-</pre>
+</code></pre>
 
 h3. MacOSX
-Precisa do XCode.
+
+Precisa do XCode. Vale a pena a instalação pelo "Homebrew":http://mxcl.github.com/homebrew
 
 h1. Modificações do VIM
 
