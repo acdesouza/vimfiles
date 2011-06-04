@@ -46,6 +46,7 @@ map <D-/> <plug>NERDCommenterToggle
 imap <D-/> <Esc><plug>NERDCommenterToggle
 
 let g:CommandTMaxHeight=20 "Show only 20 files, on Command-T
+let g:CommandTMatchWindowAtTop=1 "Show Command-T on top of screen, so I don`t lost focus on first match
 set wildignore+=.git/**,vendor/** "Ignore directories inside: .git, vendor
 
 
