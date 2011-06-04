@@ -20,22 +20,19 @@ h3. Dicionário de teclas
 h2. Instalação
 
 Além de baixar o projeto para o diretório .vim, é necessário baixar os submodulos. E, ainda, tem um passo adicional para o plugin command-t
-<pre><code>
-git clone https://github.com/acdesouza/vimfiles.git .vim
+<pre><code>git clone https://github.com/acdesouza/vimfiles.git .vim
 git submodule update --init
 echo "source ~/.vim/.vimrc" > ~/.vimrc
 </code></pre>
 
 Então, entre na pasta do Command-T e execute o make:
-<pre><code>
-cd ~/.vim/bundle/command-t/ruby/command-t/
+<pre><code>cd ~/.vim/bundle/command-t/ruby/command-t/
 ruby extconf.rb
 make
 </code></pre>
 
 Feito isso, entre no VIM e execute:
-<pre><code>
-:call pathogen#helptags()
+<pre><code>:call pathogen#helptags()
 </code></pre>
 
 h2. Dependências
@@ -43,14 +40,13 @@ h2. Dependências
 h3. Linux - Ubuntu e Debian
 
 No Ubuntu, é necessário instalar o Ruby. O pacote ruby-dev é necessário para o plugin Command-T.
-<pre><code>
-sudo apt-get install ruby ruby-dev
+<pre><code>sudo apt-get install ruby ruby-dev
 </code></pre>
 
 h3. MacOSX
 
-Precisa do XCode. O XCode vem com o CD de instalação do Mac.
-A versão mais nova é o "XCode4, que dá para comprar e baixar pela App Store":http://itunes.apple.com/br/app/xcode/id422352214?mt=12
+Precisa do XCode, que vem com o CD de instalação do Mac.
+A versão mais nova é o "XCode4, que dá para comprar e baixar pela App Store":http://itunes.apple.com/br/app/xcode/id422352214?mt=12, mas ainda não testei usar esta versão.
 Já o MacVim, entre outros aplicativos, eu instalo pelo "Homebrew":http://mxcl.github.com/homebrew
 
 h1. Modificações do VIM
