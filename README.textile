@@ -4,8 +4,7 @@ Venho lendo que não dá para depender de IDEs há algum tempo. São as mesmas p
 Então, aproveitando minha atual entrada no mundo Ruby e o fato do Akita, que é quem eu leio sobre Ruby e usa VIM, resolvi me inspirar na idéia de "versionar meu diretório ~/.vim usando o Git":http://addisu.taddese.com/blog/using-github-and-pathogen-for-your-vim-config-files.
 
 Para modificar as configurações entre no Vim e digite:
-<pre><code>
-:edit $MYVIMRC
+<pre><code>:edit $MYVIMRC
 </code></pre>
 
 h2. Documentação
@@ -50,7 +49,9 @@ sudo apt-get install ruby ruby-dev
 
 h3. MacOSX
 
-Precisa do XCode. Vale a pena a instalação pelo "Homebrew":http://mxcl.github.com/homebrew
+Precisa do XCode. O XCode vem com o CD de instalação do Mac.
+A versão mais nova é o "XCode4, que dá para comprar e baixar pela App Store":http://itunes.apple.com/br/app/xcode/id422352214?mt=12
+Já o MacVim, entre outros aplicativos, eu instalo pelo "Homebrew":http://mxcl.github.com/homebrew
 
 h1. Modificações do VIM
 
