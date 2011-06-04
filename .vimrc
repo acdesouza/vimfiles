@@ -46,6 +46,7 @@ map <D-/> <plug>NERDCommenterToggle
 imap <D-/> <Esc><plug>NERDCommenterToggle
 
 let g:CommandTMaxHeight=20 "Show only 20 files, on Command-T
+set wildignore+=.git/**,vendor/** "Ignore directories inside: .git, vendor
 
 
 " Thorfile, Rakefile, Vagrantfile and Gemfile are Ruby

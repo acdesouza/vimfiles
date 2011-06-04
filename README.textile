@@ -80,6 +80,9 @@ h1. Bundled Plugins
  * "Pathogen":https://github.com/tpope/vim-pathogen - "Como instalar os plugins no VIM encapsulados em uma pasta.":http://gustavodutra.com/post/409/pathogenvim-uma-alternativa-para-quem-utiliza-plugins-em-repositorios-remotos.
  * "Command-T":http://git.wincent.com/command-t.git/blob_plain/HEAD:/README.txt - Plugin que emula a abertura de arquivos do TextMate usando Command-T. Este plugin busca pelos arquivos no diretório corrente no Vim. Para mudar de diretório, use o cd no modo de comando.
  ** Exibe, apenas, 20 arquivos na lista;
+ ** Não busca nos diretórios:
+ *** .git/
+ *** vendor/
  ** [Leader]t para buscar arquivos no diretório do projeto;
  ** [Leader]b para buscar nos buffers, isto é, nos arquivos já abertos
  * "endwise":http://www.vim.org/scripts/script.php?script_id=2386 - Plugin para adição de fechamento de blocos em Ruby, como if, def e do com o end. Mais sobre "indentação de código no VIM":http://vim.wikia.com/wiki/VimTip83.
