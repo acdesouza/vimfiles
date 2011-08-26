@@ -6,8 +6,16 @@ set nocompatible
 
 set guioptions-=T "Hide toolbar
 
+" status-line setup
+set statusline=%f       " tail of the filename
+set statusline+=%=      " left/right separator
+set statusline+=%c,     " cursor column
+set statusline+=%l/%L   " cursor line/total lines
+set statusline+=\ %P    " percent through file
+set laststatus=2        " always show status-line
+set showcmd
+
 set number "Show line number
-set ruler "Show line and column number
 
 set encoding=utf-8    " Define file to utf-8
 "Add utf-8 shebang line

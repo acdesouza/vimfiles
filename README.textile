@@ -66,6 +66,7 @@ As customizações feitas no meu .vimrc foram encontradas em http://jmcpherson.o
  * Fonte Menlo de tamanho 13;
  * Diretório de backup dentro do diretório .vim/, assim evito de espalhar os arquivos swp pelo sistema;
  * Impedir quebra de linha;
+ * Configurar a linha de status para exibir: nome do arquivo; coluna atual,linha atual/total de linhas percentual no arquivo%
 
 
 h1. Bundled Plugins
