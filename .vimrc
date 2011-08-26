@@ -15,7 +15,11 @@ set statusline+=\ %P    " percent through file
 set laststatus=2        " always show status-line
 set showcmd
 
-set number "Show line number
+"set relativenumber  " Show distance from current line
+"set number          " Show line number
+" Toggle column with line numbers and distance in lines
+map <C-N> :set number<CR>
+map <C-N><C-N> :set relativenumber<CR>
 
 set encoding=utf-8    " Define file to utf-8
 "Add utf-8 shebang line
