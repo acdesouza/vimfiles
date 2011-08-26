@@ -20,7 +20,9 @@ h3. Dicionário de teclas
 h2. Instalação
 
 Além de baixar o projeto para o diretório .vim, é necessário baixar os submodulos. E, ainda, tem um passo adicional para o plugin command-t
-<pre><code>git clone https://github.com/acdesouza/vimfiles.git .vim
+<pre><code>cd ~
+git clone https://github.com/acdesouza/vimfiles.git .vim
+cd .vim/
 git submodule update --init
 echo "source ~/.vim/.vimrc" > ~/.vimrc
 </code></pre>
