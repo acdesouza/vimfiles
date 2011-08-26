@@ -15,9 +15,19 @@ filetype indent on    " Enable filetype-specific indenting
 filetype plugin on    " Enable filetype-specific plugins
 
 set nowrap
-set expandtab "Convert tabs char to spaces.
-set tabstop=2 shiftwidth=2 softtabstop=2
 set autoindent
+set expandtab                             " Convert tabs char to spaces.
+set tabstop=2 shiftwidth=2 softtabstop=2  " Set default tab size to 2
+
+" Custom tab format, basend on languange conventions.
+autocmd FileType javascript setlocal tabstop=4 shiftwidth=4 softtabstop=4 noexpandtab
+
+
+" Enable custom sysntax highlight
+autocmd BufNewFile,BufRead {Gemfile,Rakefile,Vagrantfile,Thorfile,config.ru}  set filetype=ruby
+autocmd BufNewFile,BufRead *.json                                             set filetype=javascript
+
+
 
 "Remove trailing spaces
 autocmd BufWritePre * :%s/\s\+$//e
@@ -49,10 +59,4 @@ let g:CommandTMaxHeight=20 "Show only 20 files, on Command-T
 let g:CommandTMatchWindowAtTop=1 "Show Command-T on top of screen, so I don`t lost focus on first match
 set wildignore+=.git/**,vendor/** "Ignore directories inside: .git, vendor
 
-
-" Thorfile, Rakefile, Vagrantfile and Gemfile are Ruby
-au BufRead,BufNewFile {Gemfile,Rakefile,Vagrantfile,Thorfile,config.ru}    set ft=ruby
-
-" add json syntax highlighting
-au BufNewFile,BufRead *.json set ft=javascript
 
