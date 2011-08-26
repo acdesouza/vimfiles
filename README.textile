@@ -31,10 +31,6 @@ ruby extconf.rb
 make
 </code></pre>
 
-Feito isso, entre no VIM e execute:
-<pre><code>:call pathogen#helptags()
-</code></pre>
-
 h2. Dependências
 
 h3. Linux - Ubuntu e Debian

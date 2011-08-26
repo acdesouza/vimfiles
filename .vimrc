@@ -1,3 +1,7 @@
+" Pathogen config
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
+
 set nocompatible
 
 set guioptions-=T "Hide toolbar
@@ -40,8 +44,6 @@ set guifont=Courier:h14
 set backupdir=~/.vim/backup
 set directory=~/.vim/backup
 
-"Pathogen config
-call pathogen#runtime_append_all_bundles()
 
 "NERDTree Toggle using \][ keymap
 noremap <Leader>][ :NERDTreeToggle<CR>
