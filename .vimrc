@@ -1,6 +1,7 @@
 " Pathogen config
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
+" call pathogen#runtime_append_all_bundles()
+" call pathogen#helptags()
+call pathogen#infect()
 
 set nocompatible
 
@@ -15,11 +16,11 @@ set statusline+=\ %P    " percent through file
 set laststatus=2        " always show status-line
 set showcmd
 
-"set relativenumber  " Show distance from current line
-"set number          " Show line number
+"set relativenumber   " Show distance from current line
+"set number           " Show line number
 " Toggle column with line numbers and distance in lines
-map <C-N> :set number<CR>
-map <C-N><C-N> :set relativenumber<CR>
+map <Leader>ln :set number<CR>
+map <Leader>lr :set relativenumber<CR>
 
 set encoding=utf-8    " Define file to utf-8
 "Add utf-8 shebang line
@@ -59,12 +60,14 @@ set directory=~/.vim/backup
 
 "NERDTree Toggle using \][ keymap
 noremap <Leader>][ :NERDTreeToggle<CR>
-let g:NERDTreeChDirMode=2 "Sincronizar o CommandT com o NERDTree
+let g:NERDTreeChDirMode=2 "This changes current dir, so sync CommandT to look the same path as NERDTree is.
 
 " NERD Commenter: Command-/ to toggle comments
 map <D-/> <plug>NERDCommenterToggle
 imap <D-/> <Esc><plug>NERDCommenterToggle
 
-let g:CommandTMaxHeight=20 "Show only 20 files, on Command-T
-let g:CommandTMatchWindowAtTop=1 "Show Command-T on top of screen, so I don`t lost focus on first match
+let g:CommandTMaxHeight=20        "Show only 20 files, on Command-T
+let g:CommandTMatchWindowAtTop=1  "Show Command-T on top of screen, so I don`t lost focus on first match
 set wildignore+=.git/**,vendor/** "Ignore directories inside: .git, vendor
+" Re-read current dir to search for new files.
+nmap <Leader>tr :CommandTFlush<CR>

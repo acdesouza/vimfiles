@@ -7,6 +7,10 @@ Para modificar as configurações entre no Vim e digite:
 <pre><code>:edit $MYVIMRC
 </code></pre>
 
+Para ver as modificações, sem reiniciar o Vim:
+<pre><code>:source $MYVIMRC
+</code></pre>
+
 h2. Documentação
 
  * "Vim":http://vimdoc.sourceforge.net/htmldoc/usr_toc.html - sobre o editor Vim.
@@ -51,13 +55,13 @@ As customizações feitas no meu .vimrc foram encontradas em http://jmcpherson.o
 
  * Sem compatibilidade com o VI;
  * Sem barra de ferramentas;
- * Exibir o número da linha na lateral esquerda do texto, com o keymap: Control + N;
- * Exibir a distância da linha atual, em linhas, na lateral esquerda do texto, com o keymap: Control + N (x2);
- * Exibir a linha e coluna atual, na inferior;
+ * Exibir o número da linha na lateral esquerda do texto, com o keymap: [Leader] + ln;
+ * Exibir a distância da linha atual, em linhas, na lateral esquerda do texto, com o keymap: [Leader] + lr;
+ * Exibir a linha e coluna atual, na barra de status;
  * Usar codificação UTF-8;
  * Adicionar o shebang UTF-8 na primeira linha do arquivo com o keymap: Command + 1
  * (Des)Comentar a linha atual, ou as linhas selecionadas, com o keymap: Command + /
- * Identação automática, isto é, a indentação da próxima linha é a mesma da linha atual;
+ * Identação automática, isto é, a identação da próxima linha é a mesma da linha atual;
  * Indentação inteligente, isto é, incrementa a indentação da linha seguinte a da criação de um bloco de código;
  * Tabulação, padrão, de 2 caracteres;
  * Substituir os caracteres de tabulação pelo de espaço;
@@ -79,8 +83,9 @@ h1. Bundled Plugins
  ** Não busca nos diretórios:
  *** .git/
  *** vendor/
- ** [Leader]t para buscar arquivos no diretório do projeto;
- ** [Leader]b para buscar nos buffers, isto é, nos arquivos já abertos
+ ** [Leader]t   para buscar arquivos no diretório do projeto;
+ ** [Leader]b   para buscar nos buffers, isto é, nos arquivos já abertos
+ ** [Leader]tr  para forçar ao CommandT ler os arquivos recém criados.
  * "endwise":http://www.vim.org/scripts/script.php?script_id=2386 - Plugin para adição de fechamento de blocos em Ruby, como if, def e do com o end. Mais sobre "indentação de código no VIM":http://vim.wikia.com/wiki/VimTip83.
  * "NERD_Tree":http://www.vim.org/scripts/script.php?script_id=1658 - Este plugin cria uma visualização de diretórios estilo árvore, com funcionalidade de bookmark, ou seja, é possível criar um bookmark para um diretório para facilitar a abertura de projetos, por exemplo.
  ** Não tem um keymap para esse cara, então andei olhando na internet sobre sugestões:
