@@ -16,6 +16,7 @@ set guioptions-=T     "Hide toolbar
 " status-line setup
 set statusline=%f       " tail of the filename
 set statusline+=%=      " left/right separator
+set statusline+=%y\     " filetype
 set statusline+=%c,     " cursor column
 set statusline+=%l/%L   " cursor line/total lines
 set statusline+=\ %P    " percent through file
