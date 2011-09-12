@@ -17,6 +17,7 @@ h2. Documentação
  * "Akita vimfiles, no Github":https://github.com/akitaonrails/vimfiles - O repositório do Akita com a configuração do vim dele.
  * "Atalhos Úteis":http://www.worldtimzone.com/res/vi.html.
  * "Melhor guia de consulta rápida":http://walking-without-crutches.heroku.com/image/images/vi-vim-cheat-sheet.png.
+ * "Videos do Derek Wyatt":http://vimeo.com/user1690209/videos
 
 h3. Dicionário de teclas
  * [Leader]: \
