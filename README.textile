@@ -16,7 +16,7 @@ h2. Documentação
  * "Vim":http://vimdoc.sourceforge.net/htmldoc/usr_toc.html - sobre o editor Vim.
  * "Akita vimfiles, no Github":https://github.com/akitaonrails/vimfiles - O repositório do Akita com a configuração do vim dele.
  * "Atalhos Úteis":http://www.worldtimzone.com/res/vi.html.
- * "Melhor guia de consulta rápida":http://walking-without-crutches.heroku.com/image/images/vi-vim-cheat-sheet.png.
+ * "Melhor guia de consulta rápida":http://michael.peopleofhonoronly.com/vim
  * "Videos do Derek Wyatt":http://vimeo.com/user1690209/videos
  * "Dividindo as janelas":http://technotales.wordpress.com/2010/04/29/vim-splits-a-guide-to-doing-exactly-what-you-want/
 
