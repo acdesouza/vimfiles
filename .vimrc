@@ -1,11 +1,17 @@
+filetype off          " force reloading *after* pathogen loaded
+
 " Pathogen config
-" call pathogen#runtime_append_all_bundles()
-" call pathogen#helptags()
-call pathogen#infect()
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
+
+filetype on           " Enable filetype detection
+filetype indent on    " Enable filetype-specific indenting
+filetype plugin on    " Enable filetype-specific plugins
+syntax on             " Enable syntax highlighting
 
 set nocompatible
 
-set guioptions-=T "Hide toolbar
+set guioptions-=T     "Hide toolbar
 
 " status-line setup
 set statusline=%f       " tail of the filename
@@ -14,7 +20,8 @@ set statusline+=%c,     " cursor column
 set statusline+=%l/%L   " cursor line/total lines
 set statusline+=\ %P    " percent through file
 set laststatus=2        " always show status-line
-set showcmd
+set showcmd             " show (partial) command in the last line of the screen
+                        "    this also shows visual selection info
 
 "set relativenumber   " Show distance from current line
 "set number           " Show line number
@@ -25,11 +32,6 @@ map <Leader>lr :set relativenumber<CR>
 set encoding=utf-8    " Define file to utf-8
 "Add utf-8 shebang line
 noremap <D-1> :0put = '#-*- coding: utf-8 -*-'<CR>
-
-syntax on             " Enable syntax highlighting
-filetype on           " Enable filetype detection
-filetype indent on    " Enable filetype-specific indenting
-filetype plugin on    " Enable filetype-specific plugins
 
 set nowrap
 set autoindent
