@@ -18,6 +18,7 @@ h2. Documentação
  * "Atalhos Úteis":http://www.worldtimzone.com/res/vi.html.
  * "Melhor guia de consulta rápida":http://walking-without-crutches.heroku.com/image/images/vi-vim-cheat-sheet.png.
  * "Videos do Derek Wyatt":http://vimeo.com/user1690209/videos
+ * "Dividindo as janelas":http://technotales.wordpress.com/2010/04/29/vim-splits-a-guide-to-doing-exactly-what-you-want/
 
 h3. Dicionário de teclas
  * [Leader]: \
