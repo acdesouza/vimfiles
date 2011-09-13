@@ -14,7 +14,8 @@ set nocompatible
 set guioptions-=T     "Hide toolbar
 
 " status-line setup
-set statusline=%f       " tail of the filename
+set statusline=%m\      " file is modified
+set statusline+=%f      " tail of the filename
 set statusline+=%=      " left/right separator
 set statusline+=%y\     " filetype
 set statusline+=%c,     " cursor column
