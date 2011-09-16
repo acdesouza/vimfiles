@@ -28,8 +28,8 @@ set showcmd             " show (partial) command in the last line of the screen
 "set relativenumber   " Show distance from current line
 "set number           " Show line number
 " Toggle column with line numbers and distance in lines
-map <Leader>ln :set number<CR>
-map <Leader>lr :set relativenumber<CR>
+map <Leader>ln :set number!<CR>
+map <Leader>lr :set relativenumber!<CR>
 
 set encoding=utf-8    " Define file to utf-8
 "Add utf-8 shebang line

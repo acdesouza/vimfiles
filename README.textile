@@ -59,8 +59,8 @@ As customizações feitas no meu .vimrc foram encontradas em http://jmcpherson.o
 
  * Sem compatibilidade com o VI;
  * Sem barra de ferramentas;
- * Exibir o número da linha na lateral esquerda do texto, com o keymap: [Leader] + ln;
- * Exibir a distância da linha atual, em linhas, na lateral esquerda do texto, com o keymap: [Leader] + lr;
+ * Exibir/Ocultar o número da linha na lateral esquerda do texto, com o keymap: [Leader] + ln, de (l)ine (n)umber;
+ * Exibir/Ocultar a distância da linha atual, em linhas, na lateral esquerda do texto, com o keymap: [Leader] + lr, de (l)ine (r)elative;
  * Exibir a linha e coluna atual, na barra de status;
  * Usar codificação UTF-8;
  * Adicionar o shebang UTF-8 na primeira linha do arquivo com o keymap: Command + 1
@@ -93,9 +93,9 @@ h1. Bundled Plugins
  * "endwise":http://www.vim.org/scripts/script.php?script_id=2386 - Plugin para adição de fechamento de blocos em Ruby, como if, def e do com o end. Mais sobre "indentação de código no VIM":http://vim.wikia.com/wiki/VimTip83.
  * "NERD_Tree":http://www.vim.org/scripts/script.php?script_id=1658 - Este plugin cria uma visualização de diretórios estilo árvore, com funcionalidade de bookmark, ou seja, é possível criar um bookmark para um diretório para facilitar a abertura de projetos, por exemplo.
  ** Não tem um keymap para esse cara, então andei olhando na internet sobre sugestões:
- *** "\][":http://heykevinle.blogspot.com/2007/10/vim-nerdtree-plugin.html - Escolhi este, porque no MacBook o F2 precisa ser precionado com a tecla Fn.
+ *** "[Leader]][":http://heykevinle.blogspot.com/2007/10/vim-nerdtree-plugin.html - Escolhi este, porque no MacBook o F2 precisa ser precionado com a tecla Fn.
  *** "F2":http://www.catonmat.net/blog/vim-plugins-nerdtree-vim
- *** "\d":http://sites.google.com/site/chrelad/notes-1/keymappingtotogglenerdtree
+ *** "[Leader]d":http://sites.google.com/site/chrelad/notes-1/keymappingtotogglenerdtree
  * "vim-ruby":https://github.com/vim-ruby/vim-ruby - Plugin para syntax highlight, indentação inteligente para Ruby
  * "NERD_Commenter":http://www.vim.org/scripts/script.php?script_id=1218
  ** Estou usando "Command/" para alternar entre comentar/descomentar a linha atual.
