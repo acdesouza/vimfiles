@@ -25,11 +25,12 @@ set laststatus=2        " always show status-line
 set showcmd             " show (partial) command in the last line of the screen
                         "    this also shows visual selection info
 
-"set relativenumber   " Show distance from current line
-"set number           " Show line number
-" Toggle column with line numbers and distance in lines
+" Toggle column with line numbers
 map <Leader>ln :set number!<CR>
+" Toggle column with distance in lines
 map <Leader>lr :set relativenumber!<CR>
+" Initialize showing line numbers
+set number            " Show line number
 
 set encoding=utf-8    " Define file to utf-8
 "Add utf-8 shebang line
