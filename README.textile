@@ -99,3 +99,14 @@ h1. Bundled Plugins
  * "vim-ruby":https://github.com/vim-ruby/vim-ruby - Plugin para syntax highlight, indentação inteligente para Ruby
  * "NERD_Commenter":http://www.vim.org/scripts/script.php?script_id=1218
  ** Estou usando "Command/" para alternar entre comentar/descomentar a linha atual.
+
+
+h1. Temas de cores
+
+Para mudar o tema, use o comando:
+<pre><code>:colorscheme nome_do_tema</code></pre>
+
+Observe que o Vim consegue completar o nome do tema, usando [TAB]
+
+ * "railscast":http://www.vim.org/scripts/script.php?script_id=1995 - Inspirado no tema usado no Textmate do "Railscast":http://railscasts.com;
+ * "vividchalk":http://www.vim.org/scripts/script.php?script_id=1891 - Inspirado no tema Vibrant Ink, do TextMate.
