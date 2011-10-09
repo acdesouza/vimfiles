@@ -56,8 +56,11 @@ set cursorline "highlight current line
 
 set incsearch "Select search match while typing
 
-set guifont=Courier:h14
-
+if has("mac")
+  set guifont=Menlo:h14
+else
+  set guifont=Courier:h14
+endif
 " Directories for swp files
 set backupdir=~/.vim/backup
 set directory=~/.vim/backup
