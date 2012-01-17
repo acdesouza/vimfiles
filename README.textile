@@ -35,17 +35,18 @@ echo "source ~/.vim/.vimrc" > ~/.vimrc
 
 h2. Dependências
 
-h3. Linux - Ubuntu e Debian
-
-No Ubuntu, é necessário instalar o Ruby. O pacote ruby-dev é necessário para o plugin Command-T.
-<pre><code>sudo apt-get install ruby ruby-dev
-</code></pre>
-
 h3. MacOSX
 
 Precisa do XCode, que vem com o CD de instalação do Mac.
 A versão mais nova é o "XCode4, que dá para comprar e baixar pela App Store":http://itunes.apple.com/br/app/xcode/id422352214?mt=12, mas ainda não testei usar esta versão.
 Já o MacVim, entre outros aplicativos, eu instalo pelo "Homebrew":http://mxcl.github.com/homebrew
+
+h3. Linux - Ubuntu e Debian
+
+Não é necessário instalar nada
+
+h3. Windows TODO
+
 
 h1. Modificações do VIM
 
@@ -75,24 +76,16 @@ As customizações feitas no meu .vimrc foram encontradas em http://jmcpherson.o
 h1. Bundled Plugins
 
  * "Pathogen":https://github.com/tpope/vim-pathogen - "Como instalar os plugins no VIM encapsulados em uma pasta.":http://gustavodutra.com/post/409/pathogenvim-uma-alternativa-para-quem-utiliza-plugins-em-repositorios-remotos.
- * "ctrlp":https://github.com/kien/ctrlp.vim - Plugin que emula a abertura de arquivos do TextMate usando, só que usando o atalho Ctrl + p. Este plugin busca pelos arquivos no diretório corrente no Vim. Para mudar de diretório, use o cd no modo de comando.
- ** Exibe, apenas, 20 arquivos na lista;
- ** Abre o buffer de busca sempre no topo, assim não perco o foco do primeiro item encontrado.
- ** Não busca nos diretórios:
- *** .git/
- *** vendor/
- ** [Leader]t   para buscar arquivos no diretório do projeto;
- ** [Leader]b   para buscar nos buffers, isto é, nos arquivos já abertos
- ** [Leader]tr  para forçar ao CommandT ler os arquivos recém criados.
- * "endwise":http://www.vim.org/scripts/script.php?script_id=2386 - Plugin para adição de fechamento de blocos em Ruby, como if, def e do com o end. Mais sobre "indentação de código no VIM":http://vim.wikia.com/wiki/VimTip83.
+ * "NERD_Commenter":http://www.vim.org/scripts/script.php?script_id=1218
+ ** Estou usando "Command/" para alternar entre comentar/descomentar a linha atual.
  * "NERD_Tree":http://www.vim.org/scripts/script.php?script_id=1658 - Este plugin cria uma visualização de diretórios estilo árvore, com funcionalidade de bookmark, ou seja, é possível criar um bookmark para um diretório para facilitar a abertura de projetos, por exemplo.
  ** Não tem um keymap para esse cara, então andei olhando na internet sobre sugestões:
  *** "[Leader]][":http://heykevinle.blogspot.com/2007/10/vim-nerdtree-plugin.html - Escolhi este, porque no MacBook o F2 precisa ser precionado com a tecla Fn.
  *** "F2":http://www.catonmat.net/blog/vim-plugins-nerdtree-vim
  *** "[Leader]d":http://sites.google.com/site/chrelad/notes-1/keymappingtotogglenerdtree
+ * "endwise":http://www.vim.org/scripts/script.php?script_id=2386 - Plugin para adição de fechamento de blocos em Ruby, como if, def e do com o end. Mais sobre "indentação de código no VIM":http://vim.wikia.com/wiki/VimTip83.
+ * "ctrlp":https://github.com/kien/ctrlp.vim - Plugin que emula a abertura de arquivos do TextMate usando, só que usando o atalho Ctrl + p. Este plugin busca pelos arquivos no diretório corrente no Vim. Para mudar de diretório, use o cd no modo de comando.
  * "vim-ruby":https://github.com/vim-ruby/vim-ruby - Plugin para syntax highlight, indentação inteligente para Ruby
- * "NERD_Commenter":http://www.vim.org/scripts/script.php?script_id=1218
- ** Estou usando "Command/" para alternar entre comentar/descomentar a linha atual.
 
 
 h1. Temas de cores
