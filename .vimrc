@@ -11,8 +11,6 @@ syntax on             " Enable syntax highlighting
 
 set nocompatible
 
-set guioptions-=T     "Hide toolbar
-
 " status-line setup
 set statusline=%m\      " file is modified
 set statusline+=%f      " tail of the filename
@@ -56,15 +54,9 @@ set cursorline "highlight current line
 
 set incsearch "Select search match while typing
 
-if has("mac")
-  set guifont=Menlo:h14
-else
-  set guifont=Courier:h14
-endif
 " Directories for swp files
 set backupdir=~/.vim/backup
 set directory=~/.vim/backup
-
 
 "NERDTree Toggle using \][ keymap
 noremap <Leader>][ :NERDTreeToggle<CR>
