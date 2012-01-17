@@ -66,8 +66,4 @@ let g:NERDTreeChDirMode=2 "This changes current dir, so sync CommandT to look th
 map <D-/> <plug>NERDCommenterToggle
 imap <D-/> <Esc><plug>NERDCommenterToggle
 
-let g:CommandTMaxHeight=20        "Show only 20 files, on Command-T
-let g:CommandTMatchWindowAtTop=1  "Show Command-T on top of screen, so I don`t lost focus on first match
 set wildignore+=.git/**,vendor/** "Ignore directories inside: .git, vendor
-" Re-read current dir to search for new files.
-nmap <Leader>tr :CommandTFlush<CR>
