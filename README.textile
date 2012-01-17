@@ -33,12 +33,6 @@ git submodule update --init
 echo "source ~/.vim/.vimrc" > ~/.vimrc
 </code></pre>
 
-Então, entre na pasta do Command-T e execute o make:
-<pre><code>cd ~/.vim/bundle/command-t/ruby/command-t/
-ruby extconf.rb
-make
-</code></pre>
-
 h2. Dependências
 
 h3. Linux - Ubuntu e Debian
@@ -81,7 +75,7 @@ As customizações feitas no meu .vimrc foram encontradas em http://jmcpherson.o
 h1. Bundled Plugins
 
  * "Pathogen":https://github.com/tpope/vim-pathogen - "Como instalar os plugins no VIM encapsulados em uma pasta.":http://gustavodutra.com/post/409/pathogenvim-uma-alternativa-para-quem-utiliza-plugins-em-repositorios-remotos.
- * "Command-T":http://git.wincent.com/command-t.git/blob_plain/HEAD:/README.txt - Plugin que emula a abertura de arquivos do TextMate usando Command-T. Este plugin busca pelos arquivos no diretório corrente no Vim. Para mudar de diretório, use o cd no modo de comando.
+ * "ctrlp":https://github.com/kien/ctrlp.vim - Plugin que emula a abertura de arquivos do TextMate usando, só que usando o atalho Ctrl + p. Este plugin busca pelos arquivos no diretório corrente no Vim. Para mudar de diretório, use o cd no modo de comando.
  ** Exibe, apenas, 20 arquivos na lista;
  ** Abre o buffer de busca sempre no topo, assim não perco o foco do primeiro item encontrado.
  ** Não busca nos diretórios:
