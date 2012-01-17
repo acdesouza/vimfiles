@@ -109,4 +109,5 @@ Para mudar o tema, use o comando:
 Observe que o Vim consegue completar o nome do tema, usando [TAB]
 
  * "railscast":http://www.vim.org/scripts/script.php?script_id=1995 - Inspirado no tema usado no Textmate do "Railscast":http://railscasts.com;
+ * "railscasts2":http://www.vi-improved.org/color_sampler_pack;
  * "vividchalk":http://www.vim.org/scripts/script.php?script_id=1891 - Inspirado no tema Vibrant Ink, do TextMate.
