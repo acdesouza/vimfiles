@@ -30,7 +30,8 @@ Além de baixar o projeto para o diretório .vim, é necessário baixar os submo
 git clone https://github.com/acdesouza/vimfiles.git .vim
 cd .vim/
 git submodule update --init
-echo "source ~/.vim/.vimrc" > ~/.vimrc
+echo "source ~/.vim/vimrc" > ~/.vimrc
+echo "source ~/.vim/gvimrc" > ~/.gvimrc
 </code></pre>
 
 h2. Dependências
