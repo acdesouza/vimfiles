@@ -68,4 +68,12 @@ noremap <c-p> :CtrlP pwd<CR>
 map <D-/> <plug>NERDCommenterToggle
 imap <D-/> <Esc><plug>NERDCommenterToggle
 
-set wildignore+=.git/**,.hg/**,vendor/** "Ignore directories inside: .git, .hg, vendor
+" Global ignore file and directories -----------------
+set wildignore+=.git,.hg    " Version control
+set wildignore+=*.orig      " Merge resolution files
+
+:wqset wildignore+=vendor      " Rails
+if has("mac")
+  set wildignore+=.DS_Store " OSX bullshit
+endif
+" ----------------------------------------------------
