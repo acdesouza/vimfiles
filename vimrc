@@ -66,4 +66,4 @@ let g:NERDTreeChDirMode=2 "This changes current dir, so sync CommandT to look th
 map <D-/> <plug>NERDCommenterToggle
 imap <D-/> <Esc><plug>NERDCommenterToggle
 
-set wildignore+=.git/**,vendor/** "Ignore directories inside: .git, vendor
+set wildignore+=.git/**,.hg/**,vendor/** "Ignore directories inside: .git, .hg, vendor
