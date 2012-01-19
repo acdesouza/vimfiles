@@ -72,7 +72,7 @@ imap <D-/> <Esc><plug>NERDCommenterToggle
 set wildignore+=.git,.hg    " Version control
 set wildignore+=*.orig      " Merge resolution files
 
-:wqset wildignore+=vendor      " Rails
+set wildignore+=vendor      " Rails
 if has("mac")
   set wildignore+=.DS_Store " OSX bullshit
 endif
