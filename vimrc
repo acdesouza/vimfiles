@@ -62,7 +62,7 @@ set directory=~/.vim/backup
 noremap <Leader>][ :NERDTreeToggle<CR>
 let g:NERDTreeChDirMode=2 "This changes current dir, so sync CommandT to look the same path as NERDTree is.
 
-noremap <c-p> :CtrlP pwd<CR>
+noremap <Leader>pr :ClearCtrlPCache<CR>:CtrlP pwd<CR>
 
 " NERD Commenter: Command-/ to toggle comments
 map <D-/> <plug>NERDCommenterToggle
