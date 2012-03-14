@@ -64,9 +64,8 @@ let g:NERDTreeChDirMode=2 "This changes current dir, so sync CommandT to look th
 
 noremap <Leader>pr :ClearCtrlPCache<CR>:CtrlP pwd<CR>
 
-" NERD Commenter: Command-/ to toggle comments
-map <D-/> <plug>NERDCommenterToggle
-imap <D-/> <Esc><plug>NERDCommenterToggle
+" NERD Commenter: <Leader>c to toggle comments
+map <Leader>c <plug>NERDCommenterToggle
 
 " Global ignore file and directories -----------------
 set wildignore+=.git,.hg    " Version control

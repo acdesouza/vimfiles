@@ -60,7 +60,7 @@ As customizações feitas no meu .vimrc foram encontradas em http://jmcpherson.o
  * Exibir a linha e coluna atual, na barra de status;
  * Usar codificação UTF-8;
  * Adicionar o shebang UTF-8 na primeira linha do arquivo com o keymap: Command + 1
- * (Des)Comentar a linha atual, ou as linhas selecionadas, com o keymap: Command + /
+ * (Des)Comentar a linha atual, ou as linhas selecionadas, com o keymap: <Leader> + c
  * Identação automática, isto é, a identação da próxima linha é a mesma da linha atual;
  * Indentação inteligente, isto é, incrementa a indentação da linha seguinte a da criação de um bloco de código;
  * Tabulação, padrão, de 2 caracteres;
