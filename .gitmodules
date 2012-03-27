@@ -19,3 +19,6 @@
 [submodule "bundle/vim-rails"]
 	path = bundle/vim-rails
 	url = https://github.com/tpope/vim-rails.git
+[submodule "bundle/jasmine"]
+	path = bundle/jasmine
+	url = https://github.com/claco/jasmine.vim.git

@@ -95,6 +95,7 @@ h1. Bundled Plugins
  *** :Rcontroller - para o controller
  *** :Runittest - para o teste unitário, normalmente do modelo
  *** :Rfunctionaltest - para o teste funcional, normalmente do controller e da view
+ * "jasmine.vim":http://chrislaco.com/blog/jasmine-vim-plugin - Plugin para syntax highlight para o framework, javascript, "Jasmine":http://pivotal.github.com/jasmine.
 
 
 h1. Temas de cores
