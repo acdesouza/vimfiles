@@ -47,6 +47,7 @@ autocmd BufWritePre * :%s/\s\+$//e " Remove trailing spaces
 " Enable custom sysntax highlight
 autocmd BufNewFile,BufRead {Gemfile,Rakefile,Vagrantfile,Thorfile,config.ru}  set filetype=ruby
 autocmd BufNewFile,BufRead *.json                                             set filetype=javascript
+autocmd BufNewFile,BufRead *.less.erb                                         set filetype=less
 
 set showmatch "Show braces matchs
 
