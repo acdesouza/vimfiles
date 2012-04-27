@@ -40,7 +40,7 @@ set expandtab                             " Convert tabs char to spaces.
 set tabstop=2 shiftwidth=2 softtabstop=2  " Set default tab size to 2
 
 " Custom tab format, basend on languange conventions.
-autocmd FileType javascript setlocal tabstop=4 shiftwidth=4 softtabstop=4 noexpandtab
+autocmd FileType javascript setlocal tabstop=4 shiftwidth=4 softtabstop=4
 
 autocmd BufWritePre * :%s/\s\+$//e " Remove trailing spaces
 
