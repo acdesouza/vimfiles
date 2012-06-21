@@ -39,6 +39,9 @@ set autoindent
 set expandtab                             " Convert tabs char to spaces.
 set tabstop=2 shiftwidth=2 softtabstop=2  " Set default tab size to 2
 
+" RagTag init.
+let g:ragtag_global_maps = 1
+
 " Custom tab format, basend on languange conventions.
 autocmd FileType javascript setlocal tabstop=4 shiftwidth=4 softtabstop=4
 
