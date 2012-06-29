@@ -1,12 +1,34 @@
-filetype off          " force reloading *after* pathogen loaded
+set nocompatible               " be iMproved
+filetype off                   " required!
 
-" Pathogen config
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
+" ==========================================
+" Vundle configs ---------------------------
+"
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" let Vundle manage Vundle
+" required!
+Bundle 'gmarik/vundle'
+
+" My Bundles here:
+" original repos on github
+Bundle 'scrooloose/nerdcommenter.git'
+Bundle 'scrooloose/nerdtree.git'
+Bundle 'kien/ctrlp.vim'
+Bundle 'tpope/vim-endwise.git'
+Bundle 'claco/jasmine.vim.git'
+Bundle 'groenewege/vim-less'
+Bundle 'tpope/vim-ragtag.git'
+Bundle 'tpope/vim-rails.git'
+Bundle 'vim-ruby/vim-ruby.git'
+Bundle 'tpope/vim-pathogen.git'
+" ==========================================
+
 
 filetype on           " Enable filetype detection
-filetype indent on    " Enable filetype-specific indenting
 filetype plugin on    " Enable filetype-specific plugins
+filetype indent on    " Enable filetype-specific indenting
 syntax on             " Enable syntax highlighting
 
 set nocompatible

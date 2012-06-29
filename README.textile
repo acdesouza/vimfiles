@@ -30,6 +30,7 @@ Além de baixar o projeto para o diretório .vim, é necessário baixar os submo
 git clone https://github.com/acdesouza/vimfiles.git .vim
 cd .vim/
 git submodule update --init
+vim +BundleInstall +qall
 echo "source ~/.vim/vimrc" > ~/.vimrc
 echo "source ~/.vim/gvimrc" > ~/.gvimrc
 </code></pre>
@@ -76,7 +77,7 @@ As customizações feitas no meu .vimrc foram encontradas em http://jmcpherson.o
 
 h1. Bundled Plugins
 
- * "Pathogen":https://github.com/tpope/vim-pathogen - "Como instalar os plugins no VIM encapsulados em uma pasta.":http://gustavodutra.com/post/409/pathogenvim-uma-alternativa-para-quem-utiliza-plugins-em-repositorios-remotos.
+ * "Vundle":https://github.com/gmarik/vundle - Como instalar os plugins no VIM encapsulados em uma pasta.
  * "NERD_Commenter":http://www.vim.org/scripts/script.php?script_id=1218
  ** Estou usando "Command/" para alternar entre comentar/descomentar a linha atual.
  * "NERD_Tree":http://www.vim.org/scripts/script.php?script_id=1658 - Este plugin cria uma visualização de diretórios estilo árvore, com funcionalidade de bookmark, ou seja, é possível criar um bookmark para um diretório para facilitar a abertura de projetos, por exemplo.
