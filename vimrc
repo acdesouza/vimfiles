@@ -22,7 +22,7 @@ Bundle 'groenewege/vim-less'
 Bundle 'tpope/vim-ragtag.git'
 Bundle 'tpope/vim-rails.git'
 Bundle 'vim-ruby/vim-ruby.git'
-Bundle 'tpope/vim-pathogen.git'
+"Bundle 'tpope/vim-pathogen.git'
 " ==========================================
 
 
