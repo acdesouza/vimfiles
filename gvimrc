@@ -1,6 +1,6 @@
-colorscheme railscasts " Set color scheme
+colorscheme railscasts  " Set color scheme
 
-set guioptions-=T     "Hide toolbar
+set guioptions-=T " Hide toolbar
 
 set showtabline=1 " Show tab line
 
@@ -11,6 +11,6 @@ set columns=800
 
 if has("mac")
   set guifont=Menlo:h14
-else
-  set guifont=Courier:h14
+elseif has("gui_gtk2")
+  set guifont=DejaVuSansMono\ 14
 endif
