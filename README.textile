@@ -113,3 +113,14 @@ Observe que o Vim consegue completar o nome do tema, usando [TAB]
  * "railscast":http://www.vim.org/scripts/script.php?script_id=1995 - Inspirado no tema usado no Textmate do "Railscast":http://railscasts.com;
  * "railscasts2":http://www.vi-improved.org/color_sampler_pack;
  * "vividchalk":http://www.vim.org/scripts/script.php?script_id=1891 - Inspirado no tema Vibrant Ink, do TextMate.
+
+h1. Vim Diff
+
+h2. Comparar o arquivo aberto com outro
+<pre><code>:vert diffsplit <caminho_para_outro_arquivo></code></pre>
+
+h2. Movimentação
+ * ]c - ir para próxima diferença
+ * [c - ir para diferença anterior
+ * dp - copiar a diferença para a outra janela
+ * do - copiar a diferença para a janela atual
