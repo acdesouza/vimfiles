@@ -100,7 +100,7 @@ h1. Bundled Plugins
  * "vim-less":https://github.com/groenewege/vim-less - Plugin de syntaxe highlight para o "Less":http://lesscss.org.
  * "vim-ragtag":https://github.com/tpope/vim-ragtag - Fechar tags. Funciona apenas em arquivos do tipo: html, xhtml, wml, xml, xslt, xsd, jsp, php, aspperl, aspvbs, cf, mason, htmldjango, and eruby
  ** Ctrl+x=: Deve adicionar a tag de script do tipo de arquivo do buffer. Como <%= %>, no caso de arquivos eruby
- ** Após escrever p, Ctrl+x<space>: Deve criar a tag <p>^</p> e posicionar o cursor no lugar do "^".
+ ** Após escrever p, Ctrl+x[space]: Deve criar a tag &lt;p&gt;^&lt;/p&gt; e posicionar o cursor no lugar do "^".
 
 
 h1. Temas de cores
