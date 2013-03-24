@@ -86,6 +86,16 @@ set incsearch "Select search match while typing
 set backupdir=~/.vim/backup
 set directory=~/.vim/backup
 
+" Dear Vim,
+"   We've reach year 2012.
+"   We have SCMs.
+"   Don't bother create a backup file
+" Love,
+" Me
+set nobackup
+set nowritebackup
+set noswapfile
+
 "NERDTree Toggle using \][ keymap
 noremap <Leader>][ :NERDTreeToggle<CR>
 let g:NERDTreeChDirMode=2 "This changes current dir, so sync CommandT to look the same path as NERDTree is.
