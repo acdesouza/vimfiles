@@ -245,6 +245,7 @@ http://www.vim.org/scripts/script.php?script_id=3883
 http://stackoverflow.com/questions/1416572/vi-vim-restore-opened-files
 
 h2. Grep
+
 Busca, recursivamente, a string batata em todos os arquivos com extensão txt e mostra o resultado em outra janela.
 
 <pre>:vimgrep /batata/ **/*.txt | :copen</pre>
