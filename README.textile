@@ -100,6 +100,122 @@ h1. Bundled Plugins
  * "vim-less":https://github.com/groenewege/vim-less - Plugin de syntaxe highlight para o "Less":http://lesscss.org.
  * "vim-ragtag":https://github.com/tpope/vim-ragtag - Fechar tags. Funciona apenas em arquivos do tipo: html, xhtml, wml, xml, xslt, xsd, jsp, php, aspperl, aspvbs, cf, mason, htmldjango, and eruby
  ** Ctrl+x=: Deve adicionar a tag de script do tipo de arquivo do buffer. Como <%= %>, no caso de arquivos eruby
+ ** Após escrever p, Ctrl+x[space]: Deve criar a tag &lt;p&gt;^&lt;/p&gt; e posicionar o cursor no lugar do "^".
+
+
+h1. Temas de cores
+
+Para mudar o tema, use o comando:
+<pre><code>:colorscheme nome_do_tema</code></pre>
+
+Observe que o Vim consegue completar o nome do tema, usando [TAB]
+
+ * "railscast":http://www.vim.org/scripts/script.php?script_id=1995 - Inspirado no tema usado no Textmate do "Railscast":http://railscasts.com;
+ * "railscasts2":http://www.vi-improved.org/color_sampler_pack;
+ * "vividchalk":http://www.vim.org/scripts/script.php?script_id=1891 - Inspirado no tema Vibrant Ink, do TextMate.
+
+h1. Vim
+
+Venho lendo que não dá para depender de IDEs há algum tempo. São as mesmas pessoas que afirmam que é possível ser mais produtivo com um editor de textos poderoso.
+Então, aproveitando minha atual entrada no mundo Ruby e o fato do Akita, que é quem eu leio sobre Ruby e usa VIM, resolvi me inspirar na idéia de "versionar meu diretório ~/.vim usando o Git":http://addisu.taddese.com/blog/using-github-and-pathogen-for-your-vim-config-files.
+
+Para modificar as configurações entre no Vim e digite:
+<pre><code>:edit $MYVIMRC
+</code></pre>
+
+Para ver as modificações, sem reiniciar o Vim:
+<pre><code>:source $MYVIMRC
+</code></pre>
+
+h2. Documentação
+
+ * "Vim":http://vimdoc.sourceforge.net/htmldoc/usr_toc.html - sobre o editor Vim.
+ * "Akita vimfiles, no Github":https://github.com/akitaonrails/vimfiles - O repositório do Akita com a configuração do vim dele.
+ * "Atalhos Úteis":http://www.worldtimzone.com/res/vi.html.
+ * "Melhor guia de consulta rápida":http://michael.peopleofhonoronly.com/vim
+ * "Videos do Derek Wyatt":http://vimeo.com/user1690209/videos
+ * "Dividindo as janelas":http://technotales.wordpress.com/2010/04/29/vim-splits-a-guide-to-doing-exactly-what-you-want/
+
+h3. Dicionário de teclas
+ * [Leader]: \
+
+h2. Instalação
+
+Além de baixar o projeto para o diretório .vim, é necessário baixar os submodulos. E, ainda, tem um passo adicional para o plugin command-t
+<pre><code>cd ~
+git clone https://github.com/acdesouza/vimfiles.git .vim
+cd .vim/
+git submodule update --init
+vim +BundleInstall +qall
+echo "source ~/.vim/vimrc" > ~/.vimrc
+echo "source ~/.vim/gvimrc" > ~/.gvimrc
+</code></pre>
+
+h2. Dependências
+
+h3. MacOSX
+
+Precisa do XCode, que vem com o CD de instalação do Mac.
+A versão mais nova é o "XCode4, que dá para comprar e baixar pela App Store":http://itunes.apple.com/br/app/xcode/id422352214?mt=12, mas ainda não testei usar esta versão.
+Já o MacVim, entre outros aplicativos, eu instalo pelo "Homebrew":http://mxcl.github.com/homebrew
+
+h3. Linux - Ubuntu e Debian
+
+Não é necessário instalar nada
+
+h3. Windows TODO
+
+
+h1. Modificações do VIM
+
+As customizações feitas no meu .vimrc foram encontradas em http://jmcpherson.org/vimrc.html. Não estou usando todas, apenas as que me permitem definir o seguinte comportamento:
+
+ * Sem compatibilidade com o VI;
+ * Sem barra de ferramentas;
+ * Exibir/Ocultar o número da linha na lateral esquerda do texto, com o keymap: [Leader] + ln, de (l)ine (n)umber;
+ * Exibir/Ocultar a distância da linha atual, em linhas, na lateral esquerda do texto, com o keymap: [Leader] + lr, de (l)ine (r)elative;
+ * Exibir a linha e coluna atual, na barra de status;
+ * Usar codificação UTF-8;
+ * Adicionar o shebang UTF-8 na primeira linha do arquivo com o keymap: Command + 1
+ * (Des)Comentar a linha atual, ou as linhas selecionadas, com o keymap: <Leader> + c
+ * Identação automática, isto é, a identação da próxima linha é a mesma da linha atual;
+ * Indentação inteligente, isto é, incrementa a indentação da linha seguinte a da criação de um bloco de código;
+ * Tabulação, padrão, de 2 caracteres;
+ * Substituir os caracteres de tabulação pelo de espaço;
+ * Apagar os espaços sobrando no final das linhas;
+ * Exibir chaves correspondentes, isto é, quando fechar uma chave, mostrar qual a chave que está sendo fechada;
+ * Buscar enquanto digita, isto é, ao ir para o modo de comando e digitar /, tudo que for digitado depois será destacado na próxima parte do texto onde aparecer, como na busca do Firefox;
+ * Fonte Menlo de tamanho 13;
+ * Diretório de backup dentro do diretório .vim/, assim evito de espalhar os arquivos swp pelo sistema;
+ * Impedir quebra de linha;
+ * Configurar a linha de status para exibir: nome do arquivo [tipo de arquivo] coluna atual,linha atual/total de linhas percentual no arquivo%
+
+
+h1. Bundled Plugins
+
+ * "Vundle":https://github.com/gmarik/vundle - Como instalar os plugins no VIM encapsulados em uma pasta.
+ * "NERD_Commenter":http://www.vim.org/scripts/script.php?script_id=1218
+ ** Estou usando "Command/" para alternar entre comentar/descomentar a linha atual.
+ * "NERD_Tree":http://www.vim.org/scripts/script.php?script_id=1658 - Este plugin cria uma visualização de diretórios estilo árvore, com funcionalidade de bookmark, ou seja, é possível criar um bookmark para um diretório para facilitar a abertura de projetos, por exemplo.
+ ** Não tem um keymap para esse cara, então andei olhando na internet sobre sugestões:
+ *** "[Leader]][":http://heykevinle.blogspot.com/2007/10/vim-nerdtree-plugin.html - Escolhi este, porque no MacBook o F2 precisa ser precionado com a tecla Fn.
+ *** "F2":http://www.catonmat.net/blog/vim-plugins-nerdtree-vim
+ *** "[Leader]d":http://sites.google.com/site/chrelad/notes-1/keymappingtotogglenerdtree
+ * "endwise":http://www.vim.org/scripts/script.php?script_id=2386 - Plugin para adição de fechamento de blocos em Ruby, como if, def e do com o end. Mais sobre "indentação de código no VIM":http://vim.wikia.com/wiki/VimTip83.
+ * "ctrlp":https://github.com/kien/ctrlp.vim - Plugin que emula a abertura de arquivos do TextMate usando, só que usando o atalho Ctrl + p. Este plugin busca pelos arquivos no diretório corrente no Vim. Para mudar de diretório, use o cd no modo de comando.
+ ** Para refazer o indice, no caso de criar arquivos, use: <pre><code>[Leader]pr</code></pre>
+ * "vim-ruby":https://github.com/vim-ruby/vim-ruby - Plugin para syntax highlight, indentação inteligente para Ruby
+ * "vim-rails":https://github.com/tpope/vim-rails#readme - Plugin para syntaxe highlight dos helpers do Rails, execução dos testes com o comando :Rake e navegação entre os artefatos relacionados.
+ ** Para executar o teste aberto no bufffer corrente use: <pre><code>:Rake</code></pre>
+ ** Navegação entre artefatos relacionados. A partir de qualquer artefato(model, controller, unittest, functionaltest) é possível navegar para os outros:
+ *** :Rmodel - para o modelo
+ *** :Rcontroller - para o controller
+ *** :Runittest - para o teste unitário, normalmente do modelo
+ *** :Rfunctionaltest - para o teste funcional, normalmente do controller e da view
+ * "jasmine.vim":http://chrislaco.com/blog/jasmine-vim-plugin - Plugin para syntax highlight para o framework, javascript, "Jasmine":http://pivotal.github.com/jasmine.
+ * "vim-less":https://github.com/groenewege/vim-less - Plugin de syntaxe highlight para o "Less":http://lesscss.org.
+ * "vim-ragtag":https://github.com/tpope/vim-ragtag - Fechar tags. Funciona apenas em arquivos do tipo: html, xhtml, wml, xml, xslt, xsd, jsp, php, aspperl, aspvbs, cf, mason, htmldjango, and eruby
+ ** Ctrl+x=: Deve adicionar a tag de script do tipo de arquivo do buffer. Como <%= %>, no caso de arquivos eruby
  ** Após escrever p, Ctrl+x<space>: Deve criar a tag <p>^</p> e posicionar o cursor no lugar do "^".
 
 
@@ -113,3 +229,31 @@ Observe que o Vim consegue completar o nome do tema, usando [TAB]
  * "railscast":http://www.vim.org/scripts/script.php?script_id=1995 - Inspirado no tema usado no Textmate do "Railscast":http://railscasts.com;
  * "railscasts2":http://www.vi-improved.org/color_sampler_pack;
  * "vividchalk":http://www.vim.org/scripts/script.php?script_id=1891 - Inspirado no tema Vibrant Ink, do TextMate.
+
+
+h1. Tips
+
+h2. Sessões
+
+Recuperar os arquivos abertos quando o Vim fechar.
+
+http://stackoverflow.com/questions/2902048/vim-save-a-list-of-open-files-and-later-open-all-files
+
+http://jaredforsyth.com/blog/2010/apr/9/vim-crash-recovery/
+http://www.vim.org/scripts/script.php?script_id=2010
+http://www.vim.org/scripts/script.php?script_id=3883
+http://stackoverflow.com/questions/1416572/vi-vim-restore-opened-files
+
+h2. Grep
+https://twitter.com/vimtips/status/319494548894126080
+
+h2. Vim Diff
+
+h3. Comparar o arquivo aberto com outro
+<pre><code>:vert diffsplit <caminho_para_outro_arquivo></code></pre>
+
+h3. Movimentação
+ * ]c - ir para próxima diferença
+ * [c - ir para diferença anterior
+ * dp - copiar a diferença para a outra janela
+ * do - copiar a diferença para a janela atual
