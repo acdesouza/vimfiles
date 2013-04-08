@@ -19,6 +19,7 @@ h2. Documentação
  * "Melhor guia de consulta rápida":http://michael.peopleofhonoronly.com/vim
  * "Videos do Derek Wyatt":http://vimeo.com/user1690209/videos
  * "Dividindo as janelas":http://technotales.wordpress.com/2010/04/29/vim-splits-a-guide-to-doing-exactly-what-you-want/
+ * "Vim para Rubistas":http://www.vimninjas.com/2012/08/28/vim-for-rubyists-part-1/
 
 h3. Dicionário de teclas
  * [Leader]: \
@@ -245,6 +246,11 @@ http://www.vim.org/scripts/script.php?script_id=3883
 http://stackoverflow.com/questions/1416572/vi-vim-restore-opened-files
 
 h2. Grep
+
+Busca, recursivamente, a string batata em todos os arquivos com extensão txt e mostra o resultado em outra janela.
+
+<pre>:vimgrep /batata/ **/*.txt | :copen</pre>
+
 https://twitter.com/vimtips/status/319494548894126080
 
 h2. Vim Diff
