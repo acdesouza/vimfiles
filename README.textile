@@ -19,6 +19,7 @@ h2. Documentação
  * "Melhor guia de consulta rápida":http://michael.peopleofhonoronly.com/vim
  * "Videos do Derek Wyatt":http://vimeo.com/user1690209/videos
  * "Dividindo as janelas":http://technotales.wordpress.com/2010/04/29/vim-splits-a-guide-to-doing-exactly-what-you-want/
+ * "Vim para Rubistas":http://www.vimninjas.com/2012/08/28/vim-for-rubyists-part-1/
 
 h3. Dicionário de teclas
  * [Leader]: \
