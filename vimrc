@@ -76,7 +76,9 @@ autocmd BufNewFile,BufRead *.less.erb                                         se
 
 set showmatch "Show braces matchs
 
-set cursorline "highlight current line
+" This makes files with long lines freezing slow
+" http://stackoverflow.com/questions/4775605/vim-syntax-highlight-improve-performance#comment11224954_7187629
+"set cursorline "highlight current line
 
 set incsearch "Select search match while typing
 
