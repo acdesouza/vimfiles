@@ -31,8 +31,6 @@ filetype plugin on    " Enable filetype-specific plugins
 filetype indent on    " Enable filetype-specific indenting
 syntax on             " Enable syntax highlighting
 
-set nocompatible
-
 " status-line setup
 set statusline=%m\      " file is modified
 set statusline+=%f      " tail of the filename
