@@ -22,6 +22,8 @@ Bundle 'groenewege/vim-less'
 Bundle 'tpope/vim-ragtag.git'
 Bundle 'tpope/vim-rails.git'
 Bundle 'vim-ruby/vim-ruby.git'
+
+Bundle 'Pychimp/vim-luna'
 "Bundle 'tpope/vim-pathogen.git'
 " ==========================================
 
@@ -114,3 +116,5 @@ if has("mac")
   set wildignore+=.DS_Store " OSX bullshit
 endif
 " ----------------------------------------------------
+
+colorscheme luna-term " Set color scheme

@@ -1,4 +1,4 @@
-colorscheme railscasts  " Set color scheme
+colorscheme luna  " Set color scheme
 
 set guioptions-=T " Hide toolbar
 
