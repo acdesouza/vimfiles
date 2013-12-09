@@ -112,6 +112,9 @@ set wildignore+=.git,.hg    " Version control
 set wildignore+=*.orig      " Merge resolution files
 
 set wildignore+=vendor      " Rails
+
+set wildignore+=_site       " Jekyll
+
 if has("mac")
   set wildignore+=.DS_Store " OSX bullshit
 endif
