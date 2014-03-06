@@ -17,14 +17,15 @@ Bundle 'scrooloose/nerdcommenter.git'
 Bundle 'scrooloose/nerdtree.git'
 Bundle 'kien/ctrlp.vim'
 Bundle 'tpope/vim-endwise.git'
-Bundle 'claco/jasmine.vim.git'
-Bundle 'groenewege/vim-less'
 Bundle 'tpope/vim-ragtag.git'
-Bundle 'tpope/vim-rails.git'
+
 Bundle 'vim-ruby/vim-ruby.git'
+Bundle 'tpope/vim-rails.git'
+
+"Bundle 'claco/jasmine.vim.git'
+"Bundle 'groenewege/vim-less'
 
 Bundle 'Pychimp/vim-luna'
-"Bundle 'tpope/vim-pathogen.git'
 " ==========================================
 
 
