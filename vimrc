@@ -3,29 +3,34 @@ filetype off                   " required!
 
 " ==========================================
 " Vundle configs ---------------------------
-"
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" ------------------------------------------
 
 " let Vundle manage Vundle
 " required!
-Bundle 'gmarik/vundle'
+Plugin 'gmarik/Vundle.vim'
 
-" My Bundles here:
+" My Plugins here:
 " original repos on github
-Bundle 'scrooloose/nerdcommenter.git'
-Bundle 'scrooloose/nerdtree.git'
-Bundle 'kien/ctrlp.vim'
-Bundle 'tpope/vim-endwise.git'
-Bundle 'tpope/vim-ragtag.git'
+Plugin 'scrooloose/nerdcommenter.git'
+Plugin 'scrooloose/nerdtree.git'
+Plugin 'kien/ctrlp.vim'
+Plugin 'tpope/vim-endwise.git'
+Plugin 'godlygeek/tabular'
 
-Bundle 'vim-ruby/vim-ruby.git'
-Bundle 'tpope/vim-rails.git'
+"Plugin 'claco/jasmine.vim.git'
+"Plugin 'groenewege/vim-less'
+Plugin 'vim-ruby/vim-ruby.git'
+Plugin 'tpope/vim-rails.git'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'tpope/vim-ragtag.git'
 
-"Bundle 'claco/jasmine.vim.git'
-"Bundle 'groenewege/vim-less'
+Plugin 'Pychimp/vim-luna'
 
-Bundle 'Pychimp/vim-luna'
+" ------------------------------------------
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
 " ==========================================
 
 
@@ -76,6 +81,7 @@ autocmd BufNewFile,BufRead *.json                                             se
 " Config erb to correct filetype
 autocmd BufNewFile,BufRead *.js.erb                                           set filetype=javascript
 autocmd BufNewFile,BufRead *.less.erb                                         set filetype=less
+autocmd BufNewFile,BufRead *.js.coffee                                        set filetype=coffee
 
 set showmatch "Show braces matchs
 
@@ -113,12 +119,20 @@ set wildignore+=.git,.hg    " Version control
 set wildignore+=*.orig      " Merge resolution files
 
 set wildignore+=vendor      " Rails
+set wildignore+=*/doc/app/*   " Rails docs
+set wildignore+=tmp         " Thinking of Rails tmp. But, will work for more
+set wildignore+=log         " Thinking of Rails log. But, will work for more
+
 
 set wildignore+=_site       " Jekyll
+
 
 if has("mac")
   set wildignore+=.DS_Store " OSX bullshit
 endif
 " ----------------------------------------------------
+
+" CtrlP ignore
+"let g:ctrlp_custom_ignore = '|DS_Store\|git'
 
 colorscheme luna-term " Set color scheme

@@ -20,6 +20,7 @@ h2. Documentação
  * "Videos do Derek Wyatt":http://vimeo.com/user1690209/videos
  * "Dividindo as janelas":http://technotales.wordpress.com/2010/04/29/vim-splits-a-guide-to-doing-exactly-what-you-want/
  * "Vim para Rubistas":http://www.vimninjas.com/2012/08/28/vim-for-rubyists-part-1/
+ * "Faster Vim, on Mac":http://danmarner.com/2014/05/02/One-Weird-Trick-To-Make-Vim-Go-Faster-On-Your-Mac.html
 
 h3. Dicionário de teclas
  * [Leader]: \
@@ -29,9 +30,10 @@ h2. Instalação
 Além de baixar o projeto para o diretório .vim, é necessário baixar os submodulos. E, ainda, tem um passo adicional para o plugin command-t
 <pre><code>cd ~
 git clone https://github.com/acdesouza/vimfiles.git .vim
-cd .vim/
-git submodule update --init
-vim +BundleInstall +qall
+cd ~/.vim/
+mkdir ~/.vim/bundle
+git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+vim +PluginInstall +qall
 echo "source ~/.vim/vimrc" > ~/.vimrc
 echo "source ~/.vim/gvimrc" > ~/.gvimrc
 </code></pre>
