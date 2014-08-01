@@ -14,9 +14,11 @@ Para ver as modificações, sem reiniciar o Vim:
 h2. Documentação
 
  * "Vim":http://vimdoc.sourceforge.net/htmldoc/usr_toc.html - sobre o editor Vim.
+ * "Vim as a languange":http://benmccormick.org/2014/07/02/learning-vim-in-2014-vim-as-language/
  * "Akita vimfiles, no Github":https://github.com/akitaonrails/vimfiles - O repositório do Akita com a configuração do vim dele.
  * "Atalhos Úteis":http://www.worldtimzone.com/res/vi.html.
  * "Melhor guia de consulta rápida":http://michael.peopleofhonoronly.com/vim
+ * "Melhor guia de consulta rápida, separado por ações":http://vim.rtorr.com/
  * "Videos do Derek Wyatt":http://vimeo.com/user1690209/videos
  * "Dividindo as janelas":http://technotales.wordpress.com/2010/04/29/vim-splits-a-guide-to-doing-exactly-what-you-want/
  * "Vim para Rubistas":http://www.vimninjas.com/2012/08/28/vim-for-rubyists-part-1/
@@ -74,6 +76,7 @@ As customizações feitas no meu .vimrc foram encontradas em http://jmcpherson.o
  * Diretório de backup dentro do diretório .vim/, assim evito de espalhar os arquivos swp pelo sistema;
  * Impedir quebra de linha;
  * Configurar a linha de status para exibir: nome do arquivo [tipo de arquivo] coluna atual,linha atual/total de linhas percentual no arquivo%
+ * Configurar a linha de tabs para exibir: número da tab:nome do arquivo aberto
 
 
 h1. Bundled Plugins
@@ -128,6 +131,15 @@ http://jaredforsyth.com/blog/2010/apr/9/vim-crash-recovery/
 http://www.vim.org/scripts/script.php?script_id=2010
 http://www.vim.org/scripts/script.php?script_id=3883
 http://stackoverflow.com/questions/1416572/vi-vim-restore-opened-files
+
+h2. Tabs
+
+ * tabnew %arquivo% - abre o %arquivo% em uma nova aba
+ * gt - Move para próxima aba
+ * gT - Move para aba anterior
+ * #gt - Move para a aba com o número #
+ * :tabclose - Fecha a aba, e as janelas dentro dela.
+ * :tabonly - Fecha todas as abas, menos a atual.
 
 h2. Grep
 
