@@ -159,3 +159,18 @@ h3. Movimentação
  * [c - ir para diferença anterior
  * dp - copiar a diferença para a outra janela
  * do - copiar a diferença para a janela atual
+
+h2. Exuberant CTags
+
+"CTags":http://ctags.sourceforge.net/ é um programa que lê o código-fonte de um projeto
+e gera um mapa de referências entre os arquivos.
+
+O Vim permite pular direto para a definição de um método, a partir do nome de qualquer outro arquivo.
+Então, se você estiver em um projeto Rails, editando um Controller, você pode ir para o método no Model.
+
+  * Ctrl + ] - Pula para a definição do método
+  * Ctrl + w + ] - Abre a definição do método em outra janela
+  * Ctrl + t - Pula de volta
+  * [Leader] + ] + r - Refaz o índice de tags, da pasta atual
+
+"Vim and CTags":http://andrew.stwrt.ca/posts/vim-ctags

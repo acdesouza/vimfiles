@@ -13,6 +13,7 @@ Plugin 'gmarik/Vundle.vim'
 
 " My Plugins here:
 " original repos on github
+Plugin 'bling/vim-airline'
 Plugin 'scrooloose/nerdcommenter.git'
 Plugin 'scrooloose/nerdtree.git'
 Plugin 'kien/ctrlp.vim'
@@ -23,6 +24,8 @@ Plugin 'godlygeek/tabular'
 "Plugin 'groenewege/vim-less'
 Plugin 'vim-ruby/vim-ruby.git'
 Plugin 'tpope/vim-rails.git'
+Plugin 'pangloss/vim-javascript'
+Plugin 'briancollins/vim-jst'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'tpope/vim-ragtag.git'
 
@@ -50,6 +53,7 @@ set statusline+=\ %P    " percent through file
 set laststatus=2        " always show status-line
 set showcmd             " show (partial) command in the last line of the screen
                         "    this also shows visual selection info
+
 function! MyTabLabel(n)
   let buflist = tabpagebuflist(a:n)
   let winnr = tabpagewinnr(a:n)
@@ -146,6 +150,16 @@ noremap <Leader>pr :ClearCtrlPCache<CR>:CtrlP pwd<CR>
 
 " NERD Commenter: <Leader>c to toggle comments
 map <Leader>c <plug>NERDCommenterToggle
+
+" CTags: <Leader>]r to refresh exuberant ctags file
+set tags+=.git/tags
+function! RefreshCTags()
+  silent !ctags -R -f .git/tags .
+  redraw!
+endfunction
+" Refresh ctags
+noremap <Leader>]r :call RefreshCTags()<CR>
+
 
 " Global ignore file and directories -----------------
 set wildignore+=.git,.hg    " Version control
