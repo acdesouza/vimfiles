@@ -114,7 +114,7 @@ autocmd BufWritePre * :%s/\s\+$//e " Remove trailing spaces
 
 " Enable custom syntax highlight
 autocmd BufNewFile,BufRead {Gemfile,Rakefile,Vagrantfile,Thorfile,config.ru}  set filetype=ruby
-autocmd BufNewFile,BufRead *.json                                             set filetype=javascript
+autocmd BufNewFile,BufRead {Gruntfile,*.json}                                 set filetype=javascript
 " Config erb to correct filetype
 autocmd BufNewFile,BufRead *.js.erb                                           set filetype=javascript
 autocmd BufNewFile,BufRead *.less.erb                                         set filetype=less
