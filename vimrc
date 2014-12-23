@@ -146,6 +146,9 @@ set noswapfile
 noremap <Leader>][ :NERDTreeToggle<CR>
 let g:NERDTreeChDirMode=2 "This changes current dir, so sync CommandT to look the same path as NERDTree is.
 
+" NERDTree find current buffer on tree
+noremap <leader>] :NERDTreeFind<cr>
+
 noremap <Leader>pr :ClearCtrlPCache<CR>:CtrlP pwd<CR>
 
 " NERD Commenter: <Leader>c to toggle comments

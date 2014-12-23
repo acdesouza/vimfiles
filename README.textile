@@ -85,6 +85,7 @@ h1. Bundled Plugins
  * "NERD_Commenter":http://www.vim.org/scripts/script.php?script_id=1218
  ** Estou usando "Command/" para alternar entre comentar/descomentar a linha atual.
  * "NERD_Tree":http://www.vim.org/scripts/script.php?script_id=1658 - Este plugin cria uma visualização de diretórios estilo árvore, com funcionalidade de bookmark, ou seja, é possível criar um bookmark para um diretório para facilitar a abertura de projetos, por exemplo.
+ ** <pre><code>[Leader]]</code></pre>: Mostra o buffer atual no NERDTree.
  ** Não tem um keymap para esse cara, então andei olhando na internet sobre sugestões:
  *** "[Leader]][":http://heykevinle.blogspot.com/2007/10/vim-nerdtree-plugin.html - Escolhi este, porque no MacBook o F2 precisa ser precionado com a tecla Fn.
  *** "F2":http://www.catonmat.net/blog/vim-plugins-nerdtree-vim
