@@ -22,6 +22,7 @@ h2. Documentação
  * "Videos do Derek Wyatt":http://vimeo.com/user1690209/videos
  * "Dividindo as janelas":http://technotales.wordpress.com/2010/04/29/vim-splits-a-guide-to-doing-exactly-what-you-want/
  * "Vim para Rubistas":http://www.vimninjas.com/2012/08/28/vim-for-rubyists-part-1/
+ * "Effective rails development Vim":http://www.sitepoint.com/effective-rails-development-vim/
  * "Faster Vim, on Mac":http://danmarner.com/2014/05/02/One-Weird-Trick-To-Make-Vim-Go-Faster-On-Your-Mac.html
 
 h3. Dicionário de teclas
