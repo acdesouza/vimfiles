@@ -24,6 +24,7 @@ h2. Documentação
  * "Vim para Rubistas":http://www.vimninjas.com/2012/08/28/vim-for-rubyists-part-1/
  * "Effective rails development Vim":http://www.sitepoint.com/effective-rails-development-vim/
  * "Faster Vim, on Mac":http://danmarner.com/2014/05/02/One-Weird-Trick-To-Make-Vim-Go-Faster-On-Your-Mac.html
+ * "A good vimrc":http://dougblack.io/words/a-good-vimrc.html
 
 h3. Dicionário de teclas
  * [Leader]: \
