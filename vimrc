@@ -1,5 +1,7 @@
-set nocompatible               " be iMproved
 filetype off                   " required!
+set nocompatible               " be iMproved
+" Get over Ex mode
+nnoremap Q <nop>
 
 " ==========================================
 " Vundle configs ---------------------------
@@ -13,7 +15,6 @@ Plugin 'gmarik/Vundle.vim'
 
 " My Plugins here:
 " original repos on github
-Plugin 'bling/vim-airline'
 Plugin 'scrooloose/nerdcommenter.git'
 Plugin 'scrooloose/nerdtree.git'
 Plugin 'kien/ctrlp.vim'
@@ -28,8 +29,10 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'briancollins/vim-jst'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'tpope/vim-ragtag.git'
+Plugin 'elixir-lang/vim-elixir'
 
 Plugin 'Pychimp/vim-luna'
+Plugin 'altercation/vim-colors-solarized.git'
 
 " ------------------------------------------
 " All of your Plugins must be added before the following line
@@ -39,8 +42,12 @@ call vundle#end()            " required
 
 filetype on           " Enable filetype detection
 filetype plugin on    " Enable filetype-specific plugins
+set cindent           "To make html code indent properly. No idea why this works.
+                      "http://stackoverflow.com/questions/815548/how-do-i-tidy-up-an-html-files-indentation-in-vi
 filetype indent on    " Enable filetype-specific indenting
 syntax on             " Enable syntax highlighting
+set lazyredraw        " redraw only when we need to.
+set wildmenu          " visual autocomplete for command menu
 
 " status-line setup
 set statusline=%m\      " file is modified
@@ -87,6 +94,8 @@ function! MyTabLine()
   return s
 endfunction
 set tabline=%!MyTabLine()
+
+nnoremap <C-t>n :tabnew<CR>
 
 " Toggle column with line numbers
 map <Leader>ln :set number!<CR>
@@ -142,6 +151,8 @@ set nobackup
 set nowritebackup
 set noswapfile
 
+"set clipboard=unnamed "http://vim.wikia.com/wiki/Accessing_the_system_clipboard
+
 "NERDTree Toggle using \][ keymap
 noremap <Leader>][ :NERDTreeToggle<CR>
 let g:NERDTreeChDirMode=2 "This changes current dir, so sync CommandT to look the same path as NERDTree is.
@@ -163,7 +174,6 @@ endfunction
 " Refresh ctags
 noremap <Leader>]r :call RefreshCTags()<CR>
 
-
 " Global ignore file and directories -----------------
 set wildignore+=.git,.hg    " Version control
 set wildignore+=*.orig      " Merge resolution files
@@ -176,6 +186,7 @@ set wildignore+=log         " Thinking of Rails log. But, will work for more
 
 set wildignore+=_site       " Jekyll
 
+"command! -nargs=+ grep_project execute 'silent grep! -R --exclude-dir=.git <args>' | copen 42
 
 if has("mac")
   set wildignore+=.DS_Store " OSX bullshit
@@ -184,5 +195,6 @@ endif
 
 " CtrlP ignore
 "let g:ctrlp_custom_ignore = '|DS_Store\|git'
+let g:ctrlp_custom_ignore = '\v[\/](bower_components|node_modules)$'
 
 colorscheme luna-term " Set color scheme
