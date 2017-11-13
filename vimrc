@@ -142,9 +142,9 @@ set backupdir=~/.vim/backup
 set directory=~/.vim/backup
 
 " Dear Vim,
-"   We've reach year 2012.
+"   We've reach year 2017.
 "   We have SCMs.
-"   Don't bother create a backup file
+"   Don't bother creating backup files
 " Love,
 " Me
 set nobackup
