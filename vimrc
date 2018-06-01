@@ -186,12 +186,14 @@ set wildignore+=log         " Thinking of Rails log. But, will work for more
 
 set wildignore+=_site       " Jekyll
 
-"command! -nargs=+ grep_project execute 'silent grep! -R --exclude-dir=.git <args>' | copen 42
-
 if has("mac")
   set wildignore+=.DS_Store " OSX bullshit
 endif
 " ----------------------------------------------------
+
+" Search ---------------------------------------------
+" Grep opening on Location List
+command! -nargs=+ GrepProject execute 'silent lgrep! -r --exclude-dir=.git --exclude-dir=.sass-cache --exclude-dir=coverage --exclude-dir=tmp --exclude-dir=log --exclude-dir=doc --exclude-dir=node_modules <args>' | lopen 20
 
 " CtrlP ignore
 "let g:ctrlp_custom_ignore = '|DS_Store\|git'

@@ -75,6 +75,7 @@ As customizações feitas no meu .vimrc foram encontradas em http://jmcpherson.o
  * Apagar os espaços sobrando no final das linhas;
  * Exibir chaves correspondentes, isto é, quando fechar uma chave, mostrar qual a chave que está sendo fechada;
  * Buscar enquanto digita, isto é, ao ir para o modo de comando e digitar /, tudo que for digitado depois será destacado na próxima parte do texto onde aparecer, como na busca do Firefox;
+ * Buscar usando o lgrep, filtrando diretórios: .git, .sass-cache, coverage, tmp, log, doc, node_modules. :GrepProject batata .
  * Fonte Menlo de tamanho 13;
  * Diretório de backup dentro do diretório .vim/, assim evito de espalhar os arquivos swp pelo sistema;
  * Impedir quebra de linha;
