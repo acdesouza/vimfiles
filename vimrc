@@ -17,7 +17,7 @@ Plugin 'gmarik/Vundle.vim'
 " original repos on github
 Plugin 'scrooloose/nerdcommenter.git'
 Plugin 'scrooloose/nerdtree.git'
-Plugin 'kien/ctrlp.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'tpope/vim-endwise.git'
 Plugin 'godlygeek/tabular'
 
