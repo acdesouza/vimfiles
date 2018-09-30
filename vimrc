@@ -195,7 +195,7 @@ endif
 " Grep opening on Location List
 set grepprg=grep\ -nr\ --color='auto'\ --exclude-dir=tmp\ --exclude-dir=log\ --exclude-dir=doc\ --exclude-dir=.git\ --exclude-dir=node_modules\ --exclude-dir=.sass-cache\ --exclude-dir=coverage
 " https://chase-seibert.github.io/blog/2013/09/21/vim-grep-under-cursor.html
-command! -nargs=+ GrepProject execute 'silent lgrep! -I -r -n --exclude-dir=git . -e <args>' | lopen 20 | execute 'silent /<args>'
+command! -nargs=+ GrepProject execute 'silent lgrep! -I -r -n --exclude-dir=git . -e ' shellescape('<args>') | lopen 20 | execute 'silent /<args>'
 autocmd FileType qf nnoremap <buffer> <Enter> :.ll<Enter>:lclose<Enter>
 " ----------------------------------------------------
 
