@@ -110,6 +110,10 @@ h1. Bundled Plugins
  * "vim-ragtag":https://github.com/tpope/vim-ragtag - Fechar tags. Funciona apenas em arquivos do tipo: html, xhtml, wml, xml, xslt, xsd, jsp, php, aspperl, aspvbs, cf, mason, htmldjango, and eruby
  ** Ctrl+x=: Deve adicionar a tag de script do tipo de arquivo do buffer. Como <%= %>, no caso de arquivos eruby
  ** Após escrever p, Ctrl+x[space]: Deve criar a tag &lt;p&gt;^&lt;/p&gt; e posicionar o cursor no lugar do "^".
+ * "ale":https://github.com/dense-analysis/ale - Linter para várias linguagens. Estou usando para rodar o rubocop
+ * "vim-rvm":https://github.com/tpope/vim-rvm - Usar a configuração do diretório atual para definir a versão do Ruby e gems disponíveis para o vim.
+ ** Uso para instalar o rubocop apenas no gemset do projeto que precisa dele. Daí configura o ale para usar a versão do rubocop desse projeto.
+ ** Para a integraçao funcionar, abre o vim pelo terminal. Na raiz do projeto usando o RVM. No Linux o gvim funciona bem.
 
 
 h1. Temas de cores

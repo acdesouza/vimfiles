@@ -23,13 +23,18 @@ Plugin 'godlygeek/tabular'
 
 "Plugin 'claco/jasmine.vim.git'
 "Plugin 'groenewege/vim-less'
+Plugin 'tpope/vim-rvm'
 Plugin 'vim-ruby/vim-ruby.git'
 Plugin 'tpope/vim-rails.git'
+Plugin 'slim-template/vim-slim'
+
 Plugin 'pangloss/vim-javascript'
 Plugin 'briancollins/vim-jst'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'tpope/vim-ragtag.git'
 Plugin 'elixir-lang/vim-elixir'
+
+Plugin 'dense-analysis/ale'
 
 Plugin 'Pychimp/vim-luna'
 Plugin 'altercation/vim-colors-solarized.git'
@@ -173,6 +178,39 @@ function! RefreshCTags()
 endfunction
 " Refresh ctags
 noremap <Leader>]r :call RefreshCTags()<CR>
+
+" ALE ------------------------------------------------
+" https://github.com/dense-analysis/ale/issues/1403
+"let g:ale_ruby_rubocop_executable = 'bin/rubocop' " - Work with binstub
+" Enable ESLint only for JavaScript.
+"let b:ale_linters = ['rubocop']
+" Set specific linters
+let g:ale_linters = {
+\  'ruby': ['rubocop', 'ruby']
+\}
+
+let g:ale_ruby_rubocop_executable = get(systemlist('which rubocop'), 0, '')
+let g:ale_ruby_rubocop_options = '--config ' . getcwd() . '/.rubocop.yml --force-exclusion'
+
+let g:ale_set_balloons = 1
+
+" https://techandfi.com/rubocop-vim/
+" Only run linters named in ale_linters settings.
+"let g:ale_linters_explicit = 1
+
+" How can I run linters only when I save files?
+let g:ale_lint_on_text_changed = 'never'
+let g:ale_lint_on_insert_leave = 0
+" You can disable this option too
+" if you don't want linters to run on opening a file
+let g:ale_lint_on_enter = 0
+
+" ----------------------------------------------------
+
+" RVM ------------------------------------------------
+
+set statusline+=%{rvm#statusline()} " RVM
+" ----------------------------------------------------
 
 " Global ignore file and directories -----------------
 set wildignore+=.git,.hg    " Version control
